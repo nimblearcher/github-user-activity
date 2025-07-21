@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# --- GitHub User Activity Tool ---
+
+# Requirements:
+# - Accept GitHub username as an argument.
+# - Fetch recent activity using GitHub API: https://api.github.com/users/<username>/events
+# - Display fetched activity in terminal.
+# - No external libraries/frameworks.
+
+# --- Argument Checking ---
+if [ -z "$1" ]; then # Checks if the first argument ($1) is empty
+    echo "Usage: $0 <github-username>" # $0 is the name of the script itself
+    echo "Example: $0 octocat"
+    exit 1 # Exit with an error code
+fi
+
+# Store the provided GitHub username
+GITHUB_USERNAME="$1"
+
+# --- API Fetching and Display Logic (to be added) ---
+# ...
